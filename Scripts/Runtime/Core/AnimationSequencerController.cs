@@ -10,7 +10,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace BrunoMikoski.AnimationSequencer
+namespace CozycatGame.AnimationSequencer
 {
     [DisallowMultipleComponent]
     [AddComponentMenu("UI/Animation Sequencer Controller", 200)]

@@ -8,7 +8,7 @@ using DG.Tweening.Plugins.Options;
 using TMPro;
 using UnityEngine;
 
-namespace BrunoMikoski.AnimationSequencer
+namespace CozycatGame.AnimationSequencer
 {
 
     [Serializable]

@@ -1,5 +1,5 @@
 {
-    "name": "BrunoMikoski.AnimationSequencer",
+    "name": "Cozycatgame.AnimationSequencer",
     "rootNamespace": "",
     "references": [
         "DOTween.Modules",

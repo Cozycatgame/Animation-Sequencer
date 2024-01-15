@@ -4,7 +4,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace BrunoMikoski.AnimationSequencer
+namespace CozycatGame.AnimationSequencer
 {
     [Serializable]
     public sealed class InvokeCallbackAnimationStep : AnimationStepBase

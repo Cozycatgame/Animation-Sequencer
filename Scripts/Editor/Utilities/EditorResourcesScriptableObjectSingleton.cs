@@ -3,7 +3,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEditor;
 
-namespace BrunoMikoski.AnimationSequencer
+namespace CozycatGame.AnimationSequencer
 {
     public class EditorDefaultResourceSingleton<T> : ScriptableObject
     where T : ScriptableObject
@@ -24,12 +24,12 @@ namespace BrunoMikoski.AnimationSequencer
             if (!TryToLoadInstance(out T resultInstance))
             {
                 resultInstance = CreateInstance<T>();
-                
+
                 string absolutePath = Path.GetFullPath("Assets/Editor Default Resources");
 
                 if (!Directory.Exists(absolutePath))
                     Directory.CreateDirectory(absolutePath);
-                
+
                 AssetDatabase.Refresh();
                 AssetDatabase.CreateAsset(resultInstance, $"Assets/Editor Default Resources/{typeof(T).Name}.asset");
                 AssetDatabase.SaveAssets();
@@ -51,14 +51,14 @@ namespace BrunoMikoski.AnimationSequencer
                 .FirstOrDefault();
             if (!string.IsNullOrEmpty(registryGUID))
             {
-               T instance = (T) AssetDatabase.LoadAssetAtPath<ScriptableObject>(
-                    AssetDatabase.GUIDToAssetPath(registryGUID)
-                );
-               if (instance != null)
-               {
-                   result = instance;
-                   return true;
-               }
+                T instance = (T)AssetDatabase.LoadAssetAtPath<ScriptableObject>(
+                     AssetDatabase.GUIDToAssetPath(registryGUID)
+                 );
+                if (instance != null)
+                {
+                    result = instance;
+                    return true;
+                }
             }
             result = null;
             return false;

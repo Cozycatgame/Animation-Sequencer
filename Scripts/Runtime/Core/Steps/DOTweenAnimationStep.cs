@@ -4,7 +4,7 @@ using System.Linq;
 using DG.Tweening;
 using UnityEngine;
 
-namespace BrunoMikoski.AnimationSequencer
+namespace CozycatGame.AnimationSequencer
 {
     [Serializable]
     public sealed class DOTweenAnimationStep : GameObjectAnimationStep

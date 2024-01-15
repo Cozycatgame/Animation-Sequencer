@@ -1,4 +1,4 @@
-﻿namespace BrunoMikoski.AnimationSequencer
+﻿namespace CozycatGame.AnimationSequencer
 {
     using System;
     using System.Collections.Generic;
@@ -81,12 +81,12 @@
 
         private static float GetSequencedStartPosition(ABSSequentiable sequenced)
         {
-            return (float) sequencedPosition.GetValue(sequenced);
+            return (float)sequencedPosition.GetValue(sequenced);
         }
 
         private static float GetSequencedEndPosition(ABSSequentiable sequenced)
         {
-            return (float) sequencedEndPosition.GetValue(sequenced);
+            return (float)sequencedEndPosition.GetValue(sequenced);
         }
     }
 }

@@ -6,7 +6,7 @@ using DG.Tweening.Plugins.Options;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace BrunoMikoski.AnimationSequencer
+namespace CozycatGame.AnimationSequencer
 {
     [Serializable]
     public sealed class ColorGraphicDOTween : DOTweenActionBase
@@ -35,7 +35,7 @@ namespace BrunoMikoski.AnimationSequencer
             previousColor = targetGraphic.color;
             TweenerCore<Color, Color, ColorOptions> graphicTween = targetGraphic.DOColor(color, duration);
 
-#if UNITY_EDITOR 
+#if UNITY_EDITOR
             if (!Application.isPlaying)
             {
                 // Work around a Unity bug where updating the colour does not cause any visual change outside of PlayMode.

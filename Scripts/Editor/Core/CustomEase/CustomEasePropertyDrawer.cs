@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 
-namespace BrunoMikoski.AnimationSequencer
+namespace CozycatGame.AnimationSequencer
 {
     [CustomPropertyDrawer(typeof(CustomEase))]
     public class CustomEasePropertyDrawer : PropertyDrawer

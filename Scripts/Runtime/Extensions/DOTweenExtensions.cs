@@ -5,7 +5,7 @@ using DG.Tweening.Plugins.Options;
 using TMPro;
 using UnityEngine.UI;
 
-namespace BrunoMikoski.AnimationSequencer
+namespace CozycatGame.AnimationSequencer
 {
     public static class DOTweenExtensions
     {

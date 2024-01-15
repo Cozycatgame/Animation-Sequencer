@@ -1,4 +1,4 @@
-﻿namespace BrunoMikoski.AnimationSequencer
+﻿namespace CozycatGame.AnimationSequencer
 {
     public static class StringExtensions
     {

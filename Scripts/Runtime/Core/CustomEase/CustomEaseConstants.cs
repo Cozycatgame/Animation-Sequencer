@@ -1,7 +1,7 @@
 ﻿#if DOTWEEN_ENABLED
 using DG.Tweening;
 
-namespace BrunoMikoski.AnimationSequencer
+namespace CozycatGame.AnimationSequencer
 {
     public partial class CustomEase
     {

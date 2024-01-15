@@ -7,7 +7,7 @@ using UnityEditor.IMGUI.Controls;
 using UnityEditorInternal;
 using UnityEngine;
 
-namespace BrunoMikoski.AnimationSequencer
+namespace CozycatGame.AnimationSequencer
 {
     [CustomEditor(typeof(AnimationSequencerController), true)]
     public class AnimationSequencerControllerCustomEditor : Editor

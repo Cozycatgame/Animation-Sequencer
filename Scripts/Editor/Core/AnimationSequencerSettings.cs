@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace BrunoMikoski.AnimationSequencer
+namespace CozycatGame.AnimationSequencer
 {
     public sealed class AnimationSequencerSettings : ScriptableObjectForPreferences<AnimationSequencerSettings>
     {
@@ -10,9 +10,9 @@ namespace BrunoMikoski.AnimationSequencer
 
         [SerializeField]
         private bool drawTimingsWhenPreviewing = true;
-        
+
         public bool AutoHideStepsWhenPreviewing => autoHideStepsWhenPreviewing;
-        public bool DrawTimingsWhenPreviewing   => drawTimingsWhenPreviewing;
+        public bool DrawTimingsWhenPreviewing => drawTimingsWhenPreviewing;
 
         [SettingsProvider]
         private static SettingsProvider SettingsProvider()

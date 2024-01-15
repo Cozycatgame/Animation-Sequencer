@@ -6,7 +6,7 @@ using DG.Tweening.Plugins.Options;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace BrunoMikoski.AnimationSequencer
+namespace CozycatGame.AnimationSequencer
 {
     [Serializable]
     public sealed class FadeGraphicDOTweenAction : DOTweenActionBase
@@ -40,7 +40,7 @@ namespace BrunoMikoski.AnimationSequencer
             previousAlpha = targetGraphic.color.a;
             TweenerCore<Color, Color, ColorOptions> graphicTween = targetGraphic.DOFade(alpha, duration);
             
-#if UNITY_EDITOR 
+#if UNITY_EDITOR
             if (!Application.isPlaying)
             {
                 // Work around a Unity bug where updating the colour does not cause any visual change outside of PlayMode.

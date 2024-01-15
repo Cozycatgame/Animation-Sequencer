@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEditor.Compilation;
 using UnityEngine;
 
-namespace BrunoMikoski.AnimationSequencer
+namespace CozycatGame.AnimationSequencer
 {
     [InitializeOnLoad]
     public static class AnimationSequencerSetupHelper
@@ -43,7 +43,7 @@ namespace BrunoMikoski.AnimationSequencer
 
             PlayerSettings.SetScriptingDefineSymbolsForGroup(EditorUserBuildSettings.selectedBuildTargetGroup,
                 $"{scriptingDefineSymbols};{SCRIPTING_DEFINE_SYMBOL}");
-            
+
             Debug.Log($"Adding {SCRIPTING_DEFINE_SYMBOL} for {EditorUserBuildSettings.selectedBuildTargetGroup}");
         }
 

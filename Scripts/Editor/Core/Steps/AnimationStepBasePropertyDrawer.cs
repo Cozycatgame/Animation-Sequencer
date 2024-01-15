@@ -3,7 +3,7 @@ using System;
 using UnityEditor;
 using UnityEngine;
 
-namespace BrunoMikoski.AnimationSequencer
+namespace CozycatGame.AnimationSequencer
 {
     [CustomPropertyDrawer(typeof(AnimationStepBase), true)]
     public class AnimationStepBasePropertyDrawer : PropertyDrawer

@@ -4,7 +4,7 @@ using DG.Tweening;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 
-namespace BrunoMikoski.AnimationSequencer
+namespace CozycatGame.AnimationSequencer
 {
     public sealed class CustomEaseAdvancedDropdownItem : AdvancedDropdownItem
     {

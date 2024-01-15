@@ -4,34 +4,34 @@ using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
-namespace BrunoMikoski.AnimationSequencer
+namespace CozycatGame.AnimationSequencer
 {
-    public static class ContextClickUtils
-    {
-        private static object source;
+	public static class ContextClickUtils
+	{
+		private static object source;
 
-        public static void SetSource(object targetSource)
-        {
-            source = targetSource;
-        }
+		public static void SetSource(object targetSource)
+		{
+			source = targetSource;
+		}
 
-        public static bool CanPasteToTarget(object target)
-        {
-            if (source == null)
-                return false;
+		public static bool CanPasteToTarget(object target)
+		{
+			if (source == null)
+				return false;
 
-            return target.GetType() == source.GetType();
-        }
-        
-        public static void ApplySourceToTarget(object target)
-        {
-            if (source == null)
-                return;
+			return target.GetType() == source.GetType();
+		}
 
-            EditorUtility.CopySerializedManagedFieldsOnly(source, target);
-        }
-        
-        public static void CopyPropertyValue(SerializedProperty source, SerializedProperty dest)
+		public static void ApplySourceToTarget(object target)
+		{
+			if (source == null)
+				return;
+
+			EditorUtility.CopySerializedManagedFieldsOnly(source, target);
+		}
+
+		public static void CopyPropertyValue(SerializedProperty source, SerializedProperty dest)
 		{
 			EditorUtility.CopySerializedManagedFieldsOnly(source, dest);
 		}
@@ -225,5 +225,5 @@ namespace BrunoMikoski.AnimationSequencer
 					break;
 			}
 		}
-    }
+	}
 }

@@ -1,8 +1,8 @@
-﻿namespace BrunoMikoski.AnimationSequencer
+﻿namespace CozycatGame.AnimationSequencer
 {
-    public enum FlowType 
-    { 
-        Append, 
-        Join 
+    public enum FlowType
+    {
+        Append,
+        Join
     }
 }

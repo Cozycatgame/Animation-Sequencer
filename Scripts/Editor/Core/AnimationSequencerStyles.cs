@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace BrunoMikoski.AnimationSequencer
+namespace CozycatGame.AnimationSequencer
 {
     public static class AnimationSequencerStyles
     {
@@ -27,8 +27,8 @@ namespace BrunoMikoski.AnimationSequencer
             InspectorTitlebar = GetStyle("IN Title", GUI.skin.label);
             InspectorSideMargins = new GUIStyle(EditorStyles.inspectorDefaultMargins)
             {
-                margin = {top = 0, bottom = 0},
-                padding = {top = 0, bottom = 0},
+                margin = { top = 0, bottom = 0 },
+                padding = { top = 0, bottom = 0 },
             };
         }
 

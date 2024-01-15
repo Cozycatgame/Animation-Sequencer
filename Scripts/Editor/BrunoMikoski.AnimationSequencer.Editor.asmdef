@@ -1,8 +1,8 @@
 {
-    "name": "BrunoMikoski.AnimationSequencer.Editor",
+    "name": "Cozycatgame.AnimationSequencer.Editor",
     "rootNamespace": "",
     "references": [
-        "BrunoMikoski.AnimationSequencer"
+        "Cozycatgame.AnimationSequencer"
     ],
     "includePlatforms": [
         "Editor"

@@ -3,7 +3,7 @@ using System;
 using UnityEditor;
 using UnityEngine;
 
-namespace BrunoMikoski.AnimationSequencer
+namespace CozycatGame.AnimationSequencer
 {
     [CustomPropertyDrawer(typeof(DOTweenActionBase), true)]
     public sealed class DOTweenActionBasePropertyDrawer : PropertyDrawer

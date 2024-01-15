@@ -2,7 +2,7 @@
 using System;
 using UnityEngine;
 
-namespace BrunoMikoski.AnimationSequencer
+namespace CozycatGame.AnimationSequencer
 {
     [Serializable]
     public abstract class GameObjectAnimationStep : AnimationStepBase
